@@ -1,0 +1,35 @@
+{
+    "development": {
+        "tokenAddress": "",
+        "abortStakingPenaltyPercents": 75,
+        "stakingMonthRewardPercents": 5,
+        "staking2MonthsRewardPercents": 15,
+        "stakingYearRewardPercents": 90,
+        "staking2YearsRewardPercents": 160,
+        "staking3YearsRewardPercents": 260,
+        "staking4YearsRewardPercents": 410,
+        "staking5YearsRewardPercents": 650
+    },
+    "mainnet": {
+        "tokenAddress": "",
+        "abortStakingPenaltyPercents": 75,
+        "stakingMonthRewardPercents": 5,
+        "staking2MonthsRewardPercents": 15,
+        "stakingYearRewardPercents": 90,
+        "staking2YearsRewardPercents": 160,
+        "staking3YearsRewardPercents": 260,
+        "staking4YearsRewardPercents": 410,
+        "staking5YearsRewardPercents": 650
+    },
+    "goerli": {
+        "tokenAddress": "0xcC31ae70dBd4932989f7d7f602914B9E83B4C8a0",
+        "abortStakingPenaltyPercents": 75,
+        "stakingMonthRewardPercents": 5,
+        "staking2MonthsRewardPercents": 15,
+        "stakingYearRewardPercents": 90,
+        "staking2YearsRewardPercents": 160,
+        "staking3YearsRewardPercents": 260,
+        "staking4YearsRewardPercents": 410,
+        "staking5YearsRewardPercents": 650
+    }
+}

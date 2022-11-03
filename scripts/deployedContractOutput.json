@@ -1,0 +1,12 @@
+{
+  "networks": {
+    "goerli": {
+      "address": "0x6BF6f845e7a7CE4C73861b982169D8ABB45C5F17",
+      "verification": "https://goerli.etherscan.io/address/0x6BF6f845e7a7CE4C73861b982169D8ABB45C5F17#code"
+    },
+    "mainnet": {
+      "address": "",
+      "verification": ""
+    }
+  }
+}
