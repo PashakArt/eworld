@@ -6,9 +6,9 @@
 const { ethers, network } = require("hardhat");
 const DEPLOY_CONFIG = require("./deploy_config.json");
 const delay = require("delay");
-const fs = require("fs");
-const path = require("path");
+const { promises } = require("fs");
 const OUTPUT_DEPLOY = require("./deployedContractOutput.json");
+const { join } = require('path');
 
 async function main() {
   const Eworld = await ethers.getContractFactory("EWorldStaking");
@@ -60,10 +60,8 @@ async function main() {
   OUTPUT_DEPLOY.networks[network.name].address = eworld.address;
   OUTPUT_DEPLOY.networks[network.name].verification =
     baseEtherscan + eworld.address + "#code";
-  fs.writeFileSync(
-    path.resolve(__dirname, "./deployedContractOutput.json"),
-    JSON.stringify(OUTPUT_DEPLOY, null, "  ")
-  );
+  const filePath = join(__dirname, "./deployedContractOutput.json");
+  await promises.writeFile(filePath, JSON.stringify(OUTPUT_DEPLOY, null, "  "))
 }
 
 // We recommend this pattern to be able to use async/await everywhere
